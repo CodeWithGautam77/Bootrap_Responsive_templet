@@ -1,0 +1,1000 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.sec-1 {
+    width: 100%;
+    height: auto;
+
+    nav {
+        position: fixed;
+        top: 0;
+        padding: 0;
+        background-color: rgba(30, 30, 30, .3);
+        backdrop-filter: blur(10px);
+        z-index: 100;
+        .header{
+            .btn{
+                font-size: 14px;
+                color: white;
+                background-color: chocolate;
+                padding: 5px 25px;
+            }
+        }
+    }
+
+    .content {
+        // position: absolute;
+        // top: 20%;
+        // left: 10%;
+        position: absolute;
+
+        #h1 {
+            color: chocolate;
+            font-size: 120px;
+            font-family: 'Mrs Saint Delafield', cursive;
+            position: relative;
+            top: 0.5em;
+            text-align: center;
+        }
+
+        #h2 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 120px;
+            letter-spacing: 20px;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+
+        }
+
+        #p1 {
+            color: white;
+        }
+
+        #btn {
+            border: 1px solid white;
+            color: white;
+            width: 200px;
+            transition: all 0.5s;
+
+            &:hover {
+                border: none;
+                background-color: chocolate;
+                border: 1px solid chocolate;
+            }
+        }
+    }
+}
+
+.backback {
+    width: 100%;
+    height: 99vh;
+    background-color: rgba(0, 0, 0, 0.375);
+    position: absolute;
+    top: 0;
+}
+
+.text-light {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width:999px) {
+    #link {
+        padding-top: 20px;
+        border-bottom: 1px solid white;
+    }
+
+    .backback {
+        height: 80vh;
+    }
+}
+
+@media (max-width:1010px) {
+    .sec-1 {
+        .backback {
+            height: 80vh;
+        }
+
+        .content {
+
+            #h1,
+            #h2 {
+                font-size: 80px;
+            }
+
+            #btn {
+                width: 150px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:865px) {
+    .sec-1 {
+        .backback {
+            height: 69vh;
+        }
+
+        .content {
+
+            #h1,
+            #h2 {
+                font-size: 60px;
+            }
+
+            #btn {
+                font-size: 10px;
+                width: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .sec-1 {
+
+        .content,
+        .backback {
+            display: none;
+        }
+
+    }
+}
+
+
+.sec-2 {
+    width: 100%;
+    background-color: black;
+    position: relative;
+    padding: 100px 0px 100px 0px;
+
+    .container {
+        .topbox {
+            width: 100%;
+            height: auto;
+
+            .title-2 {
+                #h11 {
+                    font-size: 100px;
+                    font-family: 'Mrs Saint Delafield', cursive;
+                    color: chocolate;
+                    position: relative;
+                    top: 0.5em;
+                }
+
+                #h22 {
+                    color: white;
+                    font-size: 32px;
+                    text-transform: uppercase;
+                    letter-spacing: 10px;
+                    font-weight: bold;
+                }
+
+                #p11 {
+                    color: #9999;
+                }
+            }
+        }
+
+        .buyone {
+            .getone {
+                position: relative;
+
+                .deny {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .cup {
+                        width: 40%;
+                        position: absolute;
+                        left: 5%;
+                    }
+
+                    .c-1 {
+                        text-align: left;
+                        margin-left: 45%;
+                        padding-left: 5%;
+                        width: 50%;
+                        position: absolute;
+
+                        h4 {
+                            display: inline-block;
+                            text-align: center;
+                            background: #111111;
+                            font-size: 12px;
+                            letter-spacing: .1em;
+                            padding: 5px 10px;
+                            text-transform: uppercase;
+                            color: white;
+                        }
+
+                        h3 {
+                            font-size: 36px;
+                            color: white;
+                            font-weight: bold;
+
+                            .id-color {
+                                color: chocolate;
+                            }
+                        }
+
+                        .btn-border {
+                            text-decoration: none;
+                            color: white;
+                            border: 1px solid rgba(255, 255, 255, 0.458);
+                            padding: 8px 30px;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            letter-spacing: 1.8px;
+                            position: relative;
+                            top: 1.2em;
+                            transition: all 0.5s;
+
+                            &:hover {
+                                border: 1px solid chocolate;
+                                background-color: chocolate;
+                            }
+                        }
+
+                        small {
+                            color: white;
+                            position: relative;
+                            top: 3em;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.getone {
+    transition: all 0.5s;
+}
+
+.getone:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width:991px) {
+    .sec-2 {
+        .container {
+            .buyone {
+                .getone {
+                    .deny {
+                        .c-1 {
+                            h3 {
+                                font-size: 25px;
+                            }
+
+                            .btn-border {
+                                padding: 5px 5px;
+                                font-size: 10px;
+                                top: 0;
+                            }
+
+                            h4 {
+                                padding: 2px 5px;
+                                font-size: 10px;
+                            }
+
+                            small {
+                                top: 1.2em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .sec-1 {
+        .backback {
+            height: 61vh;
+        }
+    }
+
+    .sec-2 {
+        .container {
+            .topbox {
+                .title-2 {
+                    #h11 {
+                        font-size: 80px;
+                    }
+
+                    #h22 {
+                        font-size: 25px;
+                    }
+
+                    #p11 {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.sec-3 {
+    width: 100%;
+    background-color: black;
+    position: relative;
+
+    .Gallery {
+        .row {
+            .pep {
+                width: 25%;
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    transition: all 0.5s;
+
+                }
+
+                &:hover img {
+                    transform: scale(1.2);
+                }
+
+                &:hover .title .kok {
+                    transform: scaleY(0);
+                }
+
+                .title {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: chocolate;
+                    opacity: 0.7;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        background: none;
+                    }
+
+                    .letter {
+                        width: 100%;
+                        position: absolute;
+                        right: 0;
+                        z-index: 10;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        p {
+                            color: white;
+                            font-size: 84px;
+                            font-weight: bolder;
+                            // margin: 0;
+                            opacity: 0.5;
+                        }
+                    }
+
+                    .kok {
+                        z-index: 20;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: scale(1);
+                        transition: all 0.5s;
+
+                        h5 {
+                            color: white;
+                            font-weight: bolder;
+                            letter-spacing: 3px;
+                            font-size: 18px;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:1200px) {
+    .sec-3 {
+        .Gallery {
+            .row {
+                .pep {
+                    .title {
+                        .letter {
+                            p {
+                                font-size: 60px;
+                            }
+                        }
+
+                        .kok {
+                            h5 {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .sec-3 {
+        .Gallery {
+            .row {
+                .pep {
+                    .title {
+                        .letter {
+                            p {
+                                font-size: 45px;
+                            }
+                        }
+
+                        .kok {
+                            h5 {
+                                font-size: 9px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.sec-4 {
+    width: 100%;
+    background-color: black;
+    padding: 100px 0px 100px 0px;
+    position: relative;
+
+    .Big {
+        .row {
+            .box-left {
+                display: flex;
+                align-items: center;
+
+                .left {
+                    .one {
+                        position: relative;
+
+                        #h44 {
+                            font-size: 100px;
+                            font-family: 'Mrs Saint Delafield', cursive;
+                            color: chocolate;
+                        }
+
+                        #h55 {
+                            font-size: 36px;
+                            text-transform: uppercase;
+                            letter-spacing: 5px;
+                            color: white;
+                            position: relative;
+                            bottom: 1.4em;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .two {
+                        #h66 {
+                            font-size: 22px;
+                            font-weight: bold;
+                            color: white;
+                            font-family: "Montserrat", Helvetica, Arial, sans-serif;
+                        }
+
+                        #p77 {
+                            color: #9999;
+                        }
+                    }
+                }
+            }
+
+            .box-right {
+                .right {
+                    position: relative;
+                    top: 0;
+
+                    .num {
+                        background-color: chocolate;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0;
+                        width: 150px;
+                        height: 150px;
+
+                        h3 {
+                            font-size: 36px;
+                            font-weight: bold;
+                            color: white;
+                        }
+
+                        h5 {
+                            font-size: 14px;
+                            color: white;
+                            margin-bottom: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.sec-5 {
+    width: 100%;
+    position: relative;
+
+    .fav_drink {
+        .bcolor {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(30, 30, 30, .3);
+            position: absolute;
+            top: 0;
+
+            .head-5 {
+                h3 {
+                    color: chocolate;
+                    font-size: 120px;
+                    font-family: 'Mrs Saint Delafield', cursive;
+                }
+
+                h2 {
+                    font-size: 36px;
+                    color: white;
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    position: relative;
+                    top: -2em;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .sec-5 {
+        .fav_drink {
+            .bcolor {
+                .head-5 {
+                    h3 {
+                        font-size: 80px;
+                    }
+
+                    h2 {
+                        top: -3em;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sec-6 {
+    width: 100%;
+    background-color: black;
+    padding: 100px 0px 100px 0px;
+    position: relative;
+
+    .price {
+        .row {
+            .t-box {
+                .table {
+                    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+
+                    th {
+                        color: white;
+                    }
+
+                    td {
+                        font-size: 17px;
+                        color: white;
+                    }
+
+                    span {
+                        position: relative;
+                        right: 4px;
+                        color: chocolate;
+                    }
+
+                    #tt1 {
+                        color: chocolate;
+                        font-size: 25px;
+                        letter-spacing: 3px;
+                    }
+
+                    #tt2 {
+                        color: chocolate;
+                        font-size: 12px;
+                    }
+                }
+
+                #table_2 {
+                    position: relative;
+                    top: 2em;
+                }
+            }
+        }
+    }
+}
+
+.sec-7 {
+    width: 100%;
+    position: relative;
+
+    .fav_food {
+        .bcolor {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(30, 30, 30, .3);
+            position: absolute;
+            top: 0;
+
+            .head-7 {
+                h3 {
+                    color: chocolate;
+                    font-size: 120px;
+                    font-family: 'Mrs Saint Delafield', cursive;
+                }
+
+                h2 {
+                    font-size: 36px;
+                    color: white;
+                    text-transform: uppercase;
+                    letter-spacing: 10px;
+                    position: relative;
+                    top: -2em;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:700px) {
+    .sec-7 {
+        .fav_food {
+            .bcolor {
+                .head-7 {
+                    h3 {
+                        font-size: 80px;
+                    }
+
+                    h2 {
+                        top: -3em;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+.sec-8 {
+    width: 100%;
+    position: relative;
+    padding: 100px 0px 100px 0px;
+    background-color: black;
+
+    .Snacks {
+        .row {
+            .box-8 {
+                .table {
+                    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+
+                    #tt8 {
+                        color: chocolate;
+                        font-size: 26px;
+                        letter-spacing: 4px;
+                    }
+
+                    th {
+                        color: white;
+                    }
+
+                    td {
+                        font-size: 17px;
+                        color: white;
+                    }
+
+                    span {
+                        color: chocolate;
+                        position: relative;
+                        right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sec-9 {
+    width: 100%;
+    background-color: red;
+    position: relative;
+    top: 0px;
+    background-image: url("/Image/back-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .jarrax {
+        position: relative;
+        top: 0;
+        // background-color: black;
+        padding: 50px 0px 28px 0px;
+
+        .row {
+            
+            .col-lg-4 {
+                font-family: "Montserrat", Helvetica, Arial, sans-serif;
+
+                #title_8 {
+                    #h001 {
+                        font-size: 100px;
+                        font-family: 'Mrs Saint Delafield', cursive;
+                        color: chocolate;
+                    }
+
+                    #h002 {
+                        color: white;
+                        text-transform: uppercase;
+                        letter-spacing: 5px;
+                        font-size: 36px;
+                        font-weight: bold;
+                        position: relative;
+                        top: -1.4em;
+                    }
+                }
+
+                .card {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    z-index: 10;
+                    transition: all 0.5s;
+                    overflow: hidden;
+                    border: 1px solid rgba(128, 128, 128, 0.326);
+
+                    &:hover img {
+                        // opacity: 1;
+                        transform: scale(1);
+                    }
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        z-index: -1;
+                        // opacity: 0;
+                        transition: all 0.5s;
+                        transform: scale(0);
+
+                    }
+
+                    .card_mid {
+                        padding: 108px 44px 0px;
+
+                        h2 {
+                            color: white;
+                            font-weight: bold;
+                            font-size: 26px;
+                            padding-top: 20px;
+                        }
+
+                        #ms {
+                            font-size: 12px;
+                            color: rgba(255, 255, 255, 0.458);
+                        }
+                    }
+
+                    #ds {
+                        width: 100%;
+                        text-align: center;
+                        font-size: 10px;
+                        color: white;
+                        font-weight: bold;
+                        letter-spacing: 5px;
+                        text-transform: uppercase;
+                        padding: 100px 137px 40px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media (max-width:1100px){
+    .sec-9{
+        .jarrax{
+            .row{
+                .col-lg-4{
+                    .card{
+
+                        .card_mid{
+                            padding: 50px 20px 0px;
+                        }   
+                        #ds{
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:450px){
+    .sec-9{
+        .jarrax{
+            .row{
+                .col-lg-4{
+                    .card{
+
+                        .card_mid{
+                            padding: 50px 50px;
+                        }   
+                        #ds{
+                            padding: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.sec-10{
+    width: 100%;
+    position: relative;
+    // top: 0px;
+    // bottom: 0px;
+    background-color: black;
+    padding: 100px 0px 100px 0px;
+    .location{
+        .row{
+            .col-md-4{
+                font-family: "Montserrat", Helvetica, Arial, sans-serif;
+                    
+                    i{
+                        font-size: 48px;
+                        color: chocolate !important;
+                    }
+
+                    h3{
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: white;
+                        padding-top: 20px;
+                    }
+
+                    p{
+                        padding-top: 10px;
+                        color: rgba(255, 255, 255, 0.396);
+                        word-spacing: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .sec-11 {
+        width: 100%;
+        position: relative;
+    
+        .fav_food {
+            .bcolor {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(30, 30, 30, .3);
+                position: absolute;
+                top: 0;
+    
+                .head-11 {
+                
+                    h2 {
+                        font-size: 36px;
+                        color: white;
+                    }
+
+                    span{
+                        position: relative;
+                        top: 2rem;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media(max-width:700px){
+        .sec-11{
+            .fav_food{
+                .bcolor{
+                    .head-11{
+                        h2{
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer{
+        width: 100%;
+        background-color: black;
+        position: relative;
+        .ffc{
+            .row{
+                .footer_i{
+                    i{
+                        color: white;
+                        background-color: chocolate;
+                        padding: 12px;
+                        border-radius: 50%;
+                        font-size: 17px;
+                        transition: all 0.5s;
+                        &:hover{
+                            background-color: rgba(128, 128, 128, 0.513);
+                            color: chocolate;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width:700px){
+        .footer{
+            .ffc{
+                .row{
+                    .footer_i{
+                        i{
+                            padding: 8px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
